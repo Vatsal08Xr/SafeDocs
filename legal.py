@@ -31,7 +31,7 @@ risk_solutions = {
     "payment": "Specify clear payment terms and criteria for approval to avoid ambiguity.",
     "liability": "Balance liability clauses; include exceptions for gross negligence.",
     "termination": "Clearly define termination conditions to avoid disputes.",
-    "non-compete": "Ensure duration and scope are reasonable and enforceable.",*
+    "non-compete": "Ensure duration and scope are reasonable and enforceable.",
     "governing law": "Choose jurisdiction familiar to both parties or include neutral arbitration.",
     "confidentiality": "Clarify consequences and scope of confidential information."
 }
@@ -63,34 +63,6 @@ def read_pdf(file):
     for page in reader.pages:
         text += page.extract_text() + "\n"
     return text
-
-# ------------------------------------------------------
-# Function: Fetch related judgements from Indian Kanoon
-# ------------------------------------------------------
-def fetch_judgement_from_kanoon(query, api_key, max_results=3):
-    try:
-        url = f"https://api.indiankanoon.org/search/?formInput={query}"
-        headers = {"Authorization": f"Token {api_key}"}
-        resp = requests.get(url, headers=headers)
-
-        if resp.status_code != 200:
-            return f"❌ API error {resp.status_code}: {resp.text}"
-
-        data = resp.json()
-        if "docs" not in data or not data["docs"]:
-            return "No related judgements found."
-
-        results = []
-        for doc in data["docs"][:max_results]:
-            title = doc.get("title", "Unknown Title")
-            cite = doc.get("cite", "No citation")
-            link = f"https://indiankanoon.org/doc/{doc.get('id')}/"
-            results.append(f"**{title}** ({cite})\n{link}")
-
-        return "\n\n".join(results)
-
-    except Exception as e:
-        return f"⚠️ Error: {str(e)}"
 
 # ----------------
 # Main Processing
@@ -148,16 +120,6 @@ if uploaded_file is not None:
             )
         else:
             st.markdown(f"<span style='color:green'>[LOW RISK]</span> {clause}", unsafe_allow_html=True)
-
-    # -------------------------
-    # Fetch Related Judgements 
-    # -------------------------
-    st.subheader("Related Judgements (Based on Entire Document)")
-    API_KEY = "YOUR_KANOON_API_KEY"  # <-- Replace with your actual Indian Kanoon API Key
-    query = " ".join(text.split()[:50])  # first 50 words
-    judgements = fetch_judgement_from_kanoon(query, API_KEY)
-    st.write(judgements)
-
 
 # ---------------
 # Notes / Footer
