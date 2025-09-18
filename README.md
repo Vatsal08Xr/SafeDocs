@@ -26,16 +26,16 @@ cd legal-doc-analyze
 2. Create a virtual environment
 
    On **Windows:**
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
 
    On **Mac/Linux:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
 3. Install dependencies
 
