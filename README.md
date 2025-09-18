@@ -13,13 +13,12 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 
 ---
 
-### 🚀 How to Run Locally
+### 🚀 Installation
+
 
 ### 1. Clone the repository
-bash
 git clone https://github.com/Vatsal08Xr/legal-doc-analyzer.git
 cd legal-doc-analyzer
-
 
 ### 2. Create a venv
 python -m venv venv
@@ -30,5 +29,6 @@ source venv/bin/activate  # On Mac/Linux
 pip install -r requirements.txt
 
 ### 4. Run the app
-
 streamlit run legal.py
+
+### 5. Done!
