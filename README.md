@@ -49,4 +49,4 @@ pip install -r requirements.txt
 streamlit run legal.py
 ```
 
-### 5. Done!
+5. Done!
