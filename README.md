@@ -15,15 +15,14 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 
 ### 🚀 Installation
 
-
 ### 1. Clone the repository
+'''bash
 git clone https://github.com/Vatsal08Xr/legal-doc-analyzer.git
 cd legal-doc-analyzer
 
 ### 2. Create a venv
 python -m venv venv
 venv\Scripts\activate   # On Windows
-
 source venv/bin/activate  # On Mac/Linux
 
 ### 3. Install dependencies
