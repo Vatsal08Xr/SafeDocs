@@ -16,7 +16,7 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 ### 🚀 Installation
 
 ### 1. Clone the repository
-git clone https://github.com/Vatsal08Xr/legal-doc-analyzer.git
+git clone https://github.com/Vatsal08Xr/Saivatsal_11.git
 
 cd legal-doc-analyzer
 
