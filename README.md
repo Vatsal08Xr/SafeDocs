@@ -13,10 +13,10 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 
 ---
 
-## 🚀 How to Run Locally
+### 🚀 How to Run Locally
 
 ### 1. Clone the repository
-```bash
+bash
 git clone https://github.com/Vatsal08Xr/legal-doc-analyzer.git
 cd legal-doc-analyzer
 
