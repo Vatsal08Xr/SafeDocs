@@ -25,13 +25,13 @@ cd legal-doc-analyze
 
 2. Create a virtual environment
 
-**On Windows:**
+   **On Windows:**
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-**On Mac/Linux:**
+   **On Mac/Linux:**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -49,4 +49,4 @@ pip install -r requirements.txt
 streamlit run legal.py
 ```
 
-### 5. Done!
+   ### 5. Done!
