@@ -23,6 +23,7 @@ cd legal-doc-analyzer
 ### 2. Create a venv
 python -m venv venv
 venv\Scripts\activate   # On Windows
+
 source venv/bin/activate  # On Mac/Linux
 
 ### 3. Install dependencies
