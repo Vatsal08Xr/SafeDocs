@@ -25,7 +25,7 @@ cd legal-doc-analyze
 
 2. Create a virtual environment
 
-    On **Windows:**
+   On **Windows:**
 ```bash
 python -m venv venv
 venv\Scripts\activate
