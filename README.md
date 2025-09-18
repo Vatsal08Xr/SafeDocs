@@ -19,7 +19,6 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 
 ```bash
 git clone https://github.com/Vatsal08Xr/SaiVatsal_11.git
-
 cd legal-doc-analyze
 ```
 
