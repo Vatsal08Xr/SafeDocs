@@ -20,24 +20,27 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 git clone https://github.com/Vatsal08Xr/SaiVatsal_11.git
 cd legal-doc-analyzer
 
-2. Create a venv
+### 2. Create a venv
 
 On Windows:
-
+```bash
 python -m venv venv
 venv\Scripts\activate
 
 On Mac/Linux:
 
+```bash
 python3 -m venv venv
 source venv/bin/activate
 
-3. Install dependencies
+###3. Install dependencies
 
+```bash
 pip install -r requirements.txt
 
-4. Run the app
+###4. Run the app
 
+```bash
 streamlit run legal.py 
 
 ### 5. Done!
