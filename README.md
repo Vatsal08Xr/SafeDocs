@@ -8,8 +8,7 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 ## ✨ Features
 - 📑 **Clause Analysis** – Splits documents into clauses and highlights **high-risk** and **low-risk** parts.  
 - 💡 **AI Suggestions** – Provides improvement tips for high-risk clauses.  
-- 📌 **Important Clauses** – Extracts the most crucial parts of the document.  
-- ⚖️ **Case Law Lookup** – Searches Indian Kanoon for **related judgments** based on the document text.  
+- 📌 **Important Clauses** – Extracts the most crucial parts of the document.    
 - 📂 **PDF & TXT Support** – Works with both text files and scanned legal PDFs.  
 
 ---
