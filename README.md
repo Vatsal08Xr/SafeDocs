@@ -18,8 +18,8 @@ It can process `.txt` and `.pdf` files to detect risks, suggest improvements, an
 1. Clone the repository
 
 ```bash
-git clone https://github.com/Vatsal08Xr/SaiVatsal_11.git
-cd SaiVatsal_11
+git clone https://github.com/Vatsal08Xr/SafeDocs.git
+cd SafeDocs
 ```
 
 2. Create a virtual environment
